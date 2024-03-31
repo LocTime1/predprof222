@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="\static\css\house.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/housedone" method="post" class="enterdate">
+     <input name="lll" placeholder='Введите дату' class="house">
+     <button type="submit" name="senddatebtn">Отправить</button>
+     </form>
+    <p class="datehouse"> Дата: {{ date1 }} </p>
+    <table class="grhouse">
+        <tbody>
+            {% for i in range(lst[0]) %}
+            <tr class="floor">
+                {% for j in range(lst[1]) %}
+                {% if lst[2][i][j] == 0 %}
+                <th class="floor">
+                    <img src="static/images/windowfalse.png" class="window">
+                    <p class="text12"> 1 </p>
+
+                </th>
+                {% else %}
+                <th class="floor">
+                    <img src="static/images/windowtrue.png" class="window">
+                    <p class="text12"> 1 </p>
+                </th>
+                {%  endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p class="info">Количество комнат:{{d[2]}}</p>
+    <p class="info">Номера комнат:{{d[3]}}</p>
+
+
+</body>
+</html>

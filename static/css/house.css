@@ -1,0 +1,43 @@
+.grhouse{
+    width: auto;
+    height: auto;
+    top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    border: 3px solid black;
+}
+
+.floor{
+    width: 65px;
+    height: 65px;
+    max_height: 65px;
+    max_width: 65px;
+}
+.window{
+    width: 65px;
+    height: 65px;
+    padding: -5px;
+    position: relative;
+    border-width: 1px;
+    max_height: 65px;
+    max_width: 65px;
+    background-color: #ffffff;
+}
+.datehouse{
+    margin-left: auto;
+    margin-right: auto;
+    width:120px;
+    font-size: 17px;
+}
+.text12{
+    position: relative;
+    height: 0px;
+    padding: -40px;
+    top: -20px;
+}
+.info{
+    position: relative;
+    margin-right: 20%;
+    bottom: 400px;
+}
