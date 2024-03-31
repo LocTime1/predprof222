@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
 from parsing import raschet
-from db_work import get_info_day
+from db_work import get_info_day, get_date
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def getdate():
-
+    d = get_date()
     return render_template("create_house.html", datess=d)
 
 
